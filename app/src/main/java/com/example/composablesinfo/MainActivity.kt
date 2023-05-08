@@ -61,11 +61,13 @@ fun ComposablesInfoApp() {
             ) {
                 Text(
                     text = stringResource(R.string.text_composable_title),
+                    color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
                 Text(
                     text = stringResource(R.string.text_composable_content),
+                    color = Color.Black,
                     textAlign = TextAlign.Justify
                 )
             }
@@ -80,11 +82,13 @@ fun ComposablesInfoApp() {
             ) {
                 Text(
                     text = stringResource(R.string.image_composable_title),
+                    color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
                 Text(
                     text = stringResource(R.string.image_composable_content),
+                    color = Color.Black,
                     textAlign = TextAlign.Justify
                 )
             }
@@ -105,11 +109,13 @@ fun ComposablesInfoApp() {
             ) {
                 Text(
                     text = stringResource(R.string.row_composable_title),
+                    color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
                 Text(
                     text = stringResource(R.string.row_composable_content),
+                    color = Color.Black,
                     textAlign = TextAlign.Justify
                 )
             }
@@ -124,11 +130,13 @@ fun ComposablesInfoApp() {
             ) {
                 Text(
                     text = stringResource(R.string.column_composable_title),
+                    color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
                 Text(
                     text = stringResource(R.string.column_composable_content),
+                    color = Color.Black,
                     textAlign = TextAlign.Justify
                 )
             }
