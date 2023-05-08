@@ -3,12 +3,15 @@ package com.example.composablesinfo
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composablesinfo.ui.theme.ComposablesInfoTheme
 
@@ -22,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    ComposablesInfoApp()
                 }
             }
         }
@@ -30,17 +33,61 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun ComposablesInfoApp() {
+    Column(
+        Modifier.fillMaxSize()
+    ) {
+        Row(
+            Modifier
+                .weight(0.5F, true)
+                .fillMaxSize()
+        ) {
+            Column(
+                Modifier
+                    .weight(0.5F, true)
+                    .background(color = Color(0xFFEADDFF))
+                    .fillMaxSize()
+            ) {
+
+            }
+            Column(
+                Modifier
+                    .weight(0.5F, true)
+                    .background(color = Color(0xFFD0BCFF))
+                    .fillMaxSize()
+            ) {
+
+            }
+        }
+        Row(
+            Modifier
+                .weight(0.5F, true)
+                .fillMaxSize()
+        ) {
+            Column(
+                Modifier
+                    .weight(0.5F, true)
+                    .background(color = Color(0xFFB69DF8))
+                    .fillMaxSize()
+            ) {
+
+            }
+            Column(
+                Modifier
+                    .weight(0.5F, true)
+                    .background(color = Color(0xFFF6EDFF))
+                    .fillMaxSize()
+            ) {
+
+            }
+        }
+    }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun GreetingPreview() {
+fun ComposablesInfoAppPreview() {
     ComposablesInfoTheme {
-        Greeting("Android")
+        ComposablesInfoApp()
     }
 }
